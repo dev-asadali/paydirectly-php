@@ -1,5 +1,5 @@
 {
-    "name": "asadali572/paydirectly-php",
+    "name": "paydirectly/paydirectly-php",
     "description": "paydirectly SDK for PHP",
     "keywords": ["api", "client", "graphql", "payments", "paydirectly", "rest", "sdk"],
     "type": "library",
