@@ -1,21 +1,21 @@
 {
-    "name": "paydirectly/paydirectly-php",
+    "name": "asadali572/paydirectly-php",
     "description": "paydirectly SDK for PHP",
     "keywords": ["api", "client", "graphql", "payments", "paydirectly", "rest", "sdk"],
     "type": "library",
-    "homepage": "https://github.com/paydirectlyio/paydirectly-php",
+    "homepage": "https://github.com/asadali572/paydirectly-php",
     "license": "MIT",
     "authors": [
         {
-            "name": "mongkok",
-            "email": "dani@paydirectly.io",
-            "homepage": "https://github.com/mongkok"
+            "name": "Asad ALi",
+            "email": "business.asadali@gmail.com",
+            "homepage": "https://github.com/asadali572"
         }
     ],
     "support": {
-        "docs": "https://php.paydirectly.io",
-        "source": "https://github.com/paydirectly.io/paydirectly-php",
-        "issues": "https://github.com/paydirectly.io/paydirectly-php/issues"
+        "docs": "https://php.paydirectly.com",
+        "source": "https://github.com/asadali572/paydirectly-php",
+        "issues": "https://github.com/asadali572/paydirectly-php/issues"
     },
     "require": {
         "php": ">=5.6"
