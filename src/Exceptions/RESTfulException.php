@@ -15,7 +15,10 @@ class RESTfulException extends ApiException
      * @var string API error code.
      */
     protected $errorCode;
-
+     /**
+     * @var array API error list.
+     */
+    protected $errorList;
     /**
      * Creates a RESTfulException.
      *
@@ -26,6 +29,7 @@ class RESTfulException extends ApiException
         $this->response = $response;
         $this->decodedBody = $response->toArray();
         $this->errorCode = $this->get('status', 'unknown');
+        $this->errorList =$this->get('errors', array());
         parent::__construct($this->get('message', 'Unknown error.'));
     }
 
@@ -53,5 +57,14 @@ class RESTfulException extends ApiException
     public function getErrorCode()
     {
         return $this->errorCode;
+    }
+     /**
+     * Returns API error list.
+     *
+     * @return array
+     */
+    public function getErrorList()
+    {
+        return $this->errorList;
     }
 }
