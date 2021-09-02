@@ -1,0 +1,60 @@
+{
+    "name": "paydirectly/paydirectly-php",
+    "description": "paydirectly SDK for PHP",
+    "keywords": ["api", "client", "graphql", "payments", "paydirectly", "rest", "sdk"],
+    "type": "library",
+    "homepage": "https://github.com/paydirectlyio/paydirectly-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mongkok",
+            "email": "dani@paydirectly.io",
+            "homepage": "https://github.com/mongkok"
+        }
+    ],
+    "support": {
+        "docs": "https://php.paydirectly.io",
+        "source": "https://github.com/paydirectly.io/paydirectly-php",
+        "issues": "https://github.com/paydirectly.io/paydirectly-php/issues"
+    },
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
+        "squizlabs/php_codesniffer": "*"
+    },
+    "suggest": {
+        "guzzlehttp/guzzle": "Required for using Guzzle HTTP client"
+    },
+    "autoload": {
+        "psr-4": {
+            "Paydirectly\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Paydirectly\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "phpunit"
+        ],
+        "coverage": [
+            "phpunit --coverage-text"
+        ],
+        "phpcs": [
+            "phpcs -s -p"
+        ],
+        "phpcbf": [
+            "phpcbf -p"
+        ],
+        "analyse": [
+            "phpstan analyse"
+        ],
+        "fix": [
+            "php-cs-fixer fix"
+        ]
+    }
+}
