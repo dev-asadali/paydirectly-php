@@ -2,7 +2,7 @@
  
 </p>
 
-# paydirectly SDK for PHP
+# Paydirectly SDK for PHP
 
 PHP library for [paydirectly](https://paydirectly.io) API.
 
