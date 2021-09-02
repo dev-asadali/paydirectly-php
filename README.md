@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/paydirectlyio/paydirectly-php/releases"><img src="https://img.shields.io/github/release/paydirectlyio/paydirectly-php.svg" alt="Latest Version" /></a> <a href="https://travis-ci.com/paydirectlyio/paydirectly-php"><img src="https://img.shields.io/travis/paydirectlyio/paydirectly-php.svg" alt="Build Status" /></a> <a href="https://scrutinizer-ci.com/g/paydirectlyio/paydirectly-php/"><img src="https://scrutinizer-ci.com/g/paydirectlyio/paydirectly-php/badges/quality-score.png?b=master" alt="Scrutinizer" /></a> <a href="https://scrutinizer-ci.com/g/paydirectlyio/paydirectly-php/"><img src="https://scrutinizer-ci.com/g/paydirectlyio/paydirectly-php/badges/coverage.png?b=master" alt="Coverage" /></a>
+ 
 </p>
 
 # paydirectly SDK for PHP
