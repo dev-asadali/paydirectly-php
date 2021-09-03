@@ -11,7 +11,7 @@ PHP library for [paydirectly](https://paydirectly.io) API.
 The recommended way to install *paydirectly-php* is through [Composer](https://getcomposer.org/):
 
 ```sh
-composer require asadali572/paydirectly-php
+composer require paydirectly/paydirectly-php
 ```
 
 After installing, you need to require Composer's autoloader:
