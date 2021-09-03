@@ -14,7 +14,7 @@ class Paydirectly
     /**
      * @const string Version number of the Paydirectly SDK.
      */
-    const VERSION = '1.0';
+    const VERSION = '1.2';
 
     /**
      * @const string Default API version for requests.
