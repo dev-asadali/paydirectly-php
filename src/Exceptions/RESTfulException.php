@@ -28,9 +28,9 @@ class RESTfulException extends ApiException
     {
         $this->response = $response;
         $this->decodedBody = $response->toArray();
-        $this->errorCode = $this->get('status', 'unknown');
+        $this->errorCode =$response->getStatusCode();
         $this->errorList =$this->get('errors', array());
-        parent::__construct($this->get('message', 'Unknown error.'));
+        parent::__construct($this->get('message', 'Unknown error.'),$this->errorCode);
     }
 
     /**
