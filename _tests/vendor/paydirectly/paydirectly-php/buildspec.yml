@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - sphinx-build -b html ./docs ./build
+  post_build:
+    commands:
+      - |
+        aws s3 sync ./build s3://$S3_BUCKET \
+          --exclude "_static/*" \
+          --content-type "text/html" \
+          --acl public-read
+      - |
+        aws s3 sync ./build s3://$S3_BUCKET \
+          --exclude "*" \
+          --include "_static/*" \
+          --cache-control max-age=14400,public \
+          --acl public-read \
+          --delete
+      - |
+        aws cloudfront create-invalidation \
+          --distribution-id $DISTRIBUTION_ID \
+          --paths "/*"

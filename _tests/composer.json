@@ -1,0 +1,6 @@
+{
+    "require": {
+        "paydirectly/paydirectly-php": "^1.0",
+        "guzzlehttp/guzzle": "^7.3"
+    }
+}
