@@ -55,9 +55,6 @@ class CurlClient implements ClientInterface
         if ($errorCode = $this->curl->errno()) {
             throw new PaydirectlyException($this->curl->error(), $errorCode);
         }
-        if (!is_numeric(strpos($contentType,'application/json'))) {
-            throw new PaydirectlyException('Invalid Responce Content Type', $errorCode);
-        }
         $this->curl->close();
         return new Response($request, $statusCode, $headers, $raw);
     }

@@ -121,9 +121,8 @@ class Response
     public function isError()
     {
         $excClassName = $this->exc;
-       
         return (
-            $this->statusCode >= 400 or
+            $this->statusCode >= 400 or $this->decodedBody==NULL or
             (isset($this->decodedBody[$excClassName::ERROR_KEY])
              && $this->decodedBody[$excClassName::ERROR_KEY]==false)
         );
