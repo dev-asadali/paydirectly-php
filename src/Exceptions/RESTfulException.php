@@ -46,6 +46,9 @@ class RESTfulException extends ApiException
         if (isset($this->decodedBody[$key])) {
             return $this->decodedBody[$key];
         }
+        if($this->errorCode==404 && $key=="message"){
+            return "Invalid Request Url";
+        }
         return $default;
     }
 
