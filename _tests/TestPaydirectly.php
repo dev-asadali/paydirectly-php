@@ -4,7 +4,9 @@ ini_set('display_errors', 1);
 require 'vendor/autoload.php';
 use Paydirectly\Exceptions\RESTfulException;
 
-$params = json_decode(file_get_contents('sampleData.text'),true);
+$params = [
+
+]
 try {
 	$paydirectly = new \Paydirectly\Paydirectly(
 array(
